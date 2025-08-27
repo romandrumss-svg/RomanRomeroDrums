@@ -1,118 +1,74 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roman Romero Drums</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #ffecd2, #fcb69f);
-      color: #222;
-      text-align: center;
-    }
-    header {
-      background: #222;
-      color: white;
-      padding: 20px;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    nav ul li {
-      display: inline-block;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    h2 {
-      margin-bottom: 20px;
-      color: #ff5722;
-    }
-    iframe {
-      margin: 10px;
-      max-width: 90%;
-      border-radius: 10px;
-    }
-    .socials a {
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: bold;
-      color: #222;
-    }
-    footer {
-      background: #222;
-      color: white;
-      padding: 20px;
-    }
-    footer a {
-      color: #ff5722;
-      text-decoration: none;
-    }
-  </style>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
     <h1>Roman Romero - Professional Drummer</h1>
     <nav>
       <ul>
-        <li>🥁 Drum Lessons</li>
-        <li>🎸 Touring & Gigs</li>
-        <li>🎶 Recording / Albums</li>
-        <li>📹 Music Videos</li>
-        <li>🎤 Singing</li>
+        <li>🎵 Drum Lessons</li>
+        <li>🥁 Touring & Gigs</li>
+        <li>🎶 Recording</li>
+        <li>🎥 Music Videos</li>
+        <li>🎤 Vocals & Collabs</li>
       </ul>
     </nav>
+    <div class="contact-header">
+      <p>📧 romandrumss@gmail.com | 📱 714-615-2404</p>
+    </div>
   </header>
 
-  <section>
-    <h2>🔥 Featured Drum Cover</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3uxcRc86QFQ" frameborder="0" allowfullscreen></iframe>
+  <!-- BIO -->
+  <section class="bio">
+    <h2>About Me</h2>
+    <p>I’ve been playing drums since I was 2 years old, on and off. In 2020, I recorded an album with <strong>Sublime with Rome</strong>, gigged, and played all around the United States. I’ve performed on multiple albums, worked with some of the best in the industry, and continue to bring high-energy performances live and in the studio.</p>
   </section>
 
-  <section>
-    <h2>🎶 Sublime with Rome Sessions</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z1vbZi1Rpcg" frameborder="0" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/mxKa0Ma0qDI" frameborder="0" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/31UF72t-CVQ" frameborder="0" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Mbk6Z4V3e6Y" frameborder="0" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Co3jKnGs3eQ" frameborder="0" allowfullscreen></iframe>
-    <br>
-    <p><a href="https://youtube.com/playlist?list=PLOmFuHJwZc2EiKTz6TQ218nmzHIp_SoPm" target="_blank">🎧 View Full Playlist Here</a></p>
+  <!-- FEATURED VIDEO -->
+  <section class="featured">
+    <h2>Featured Drum Cover</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/UqTGWGOQTC8" frameborder="0" allowfullscreen></iframe>
+    </div>
   </section>
 
-  <section>
-    <h2>🎵 My Band - Eighth Ball</h2>
-    <p><strong>Eighth Ball is an upcoming band from Orange County, Huntington Beach!</strong><br>
-    We play reggae, ska, and punk rock. We’re available to tour, record, collab, or gig.<br>
-    Contact us for booking!</p>
-    <ul style="list-style: none; padding: 0;">
+  <!-- BAND -->
+  <section class="band">
+    <h2>My Band - Eighth Ball</h2>
+    <p>Upcoming band from Orange County, Huntington Beach! We play reggae, ska, and punk rock. We are available for touring, recording, collaborations, or gigs. Contact us for booking!</p>
+    <ul>
       <li>🥁 Roman E Romero - Drums</li>
       <li>🎸 Carter McCall - Guitar</li>
-      <li>🎵 Chris Wheeler - Bass</li>
-      <li>🎤 Gabe Pederson - Vocals / Guitar</li>
+      <li>🎸 Chris Wheeler - Bass</li>
+      <li>🎤 Gabe Pederson - Vocals/Guitar</li>
     </ul>
   </section>
 
+  <!-- SUBLIME WITH ROME -->
+  <section class="sublime">
+    <h2>Sublime with Rome Sessions</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/Z1vbZi1Rpcg" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/mxKa0Ma0qDI" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/31UF72t-CVQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p><a href="https://youtube.com/playlist?list=PLOmFuHJwZc2EiKTz6TQ218nmzHIp_SoPm" target="_blank">🎧 View Full Playlist Here</a></p>
+  </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>📧 Email: <a href="mailto:romandrumss@gmail.com">romandrumss@gmail.com</a> | 📱 Phone: <a href="tel:7146152404">714-615-2404</a></p>
+    <p>📧 romandrumss@gmail.com | 📱 714-615-2404</p>
     <div class="socials">
-      <a href="https://www.youtube.com/playlist?list=PL5qp_Xq_Sz6kaVB6_uzv-zdHpirRFk27H" target="_blank">YouTube</a> |
+      <a href="https://youtube.com/playlist?list=PL5qp_Xq_Sz6kaVB6_uzv-zdHpirRFk27H" target="_blank">YouTube</a> |
       <a href="https://www.tiktok.com/@romanromero10" target="_blank">TikTok</a>
     </div>
+    <p>&copy; 2025 Roman Romero</p>
   </footer>
 </body>
 </html>
-
