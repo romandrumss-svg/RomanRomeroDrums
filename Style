@@ -1,1 +1,84 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Arial', sans-serif;
+  background: linear-gradient(180deg, #111111, #1a2a40);
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #0d3b66;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav ul li {
+  display: inline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Section Styling */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  color: #4dabf7;
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+section p, section ul {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+/* Video embeds */
+iframe {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: #0d3b66;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer img {
+  width: 30px;
+  margin: 0 8px;
+  vertical-align: middle;
+}
 
