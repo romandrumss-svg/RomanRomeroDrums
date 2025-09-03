@@ -1,77 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roman Romero Drums</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Roman Romero — Drummer</title>
+<style>
+  :root{
+    --bg1:#111215;
+    --bg2:#0f263d;
+    --accent:#e63946; /* red headers */
+    --muted:#cfd8dc;
+  }
+  html,body{height:100%;margin:0;}
+  body{
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: linear-gradient(180deg,var(--bg1),var(--bg2));
+    color:var(--muted);
+  }
+
+  header{
+    padding:22px 12px;
+    text-align:center;
+    border-bottom:3px solid rgba(255,255,255,0.03);
+    background:linear-gradient(90deg, rgba(0,0,0,0.25), rgba(8,26,38,0.25));
+  }
+  header h1{ margin:0; color:var(--accent); font-size:2.1rem; letter-spacing:0.6px; }
+  .top-contact{ margin-top:8px; font-size:0.95rem; color:#ffd6d6; }
+  .top-contact a{ color:#ffd6d6; text-decoration:none; margin:0 8px; }
+
+  nav{ margin-top:12px; }
+  nav ul{ list-style:none; padding:0; margin:0; display:flex; justify-content:center; gap:10px; flex-wrap:wrap; }
+  nav li{ background:rgba(255,255,255,0.03); padding:8px 12px; border-radius:6px; font-weight:700; color:#f3f7f9; }
+
+  main{ max-width:980px; margin:30px auto; padding:0 16px; }
+  section{ background: rgba(255,255,255,0.02); padding:26px; border-radius:10px; margin-bottom:20px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); }
+  h2{ color:var(--accent); margin:0 0 12px 0; font-size:1.4rem; }
+  p, li{ color:var(--muted); font-size:1rem; line-height:1.5; }
+
+  .video-wrap{ display:flex; justify-content:center; }
+  iframe{ width:100%; max-width:860px; height:480px; border:0; border-radius:8px; background:#000; }
+
+  ul.members{ list-style:none; padding-left:0; margin-top:10px; }
+  ul.members li{ margin:6px 0; }
+
+  .socials{ display:flex; justify-content:center; gap:18px; margin-top:8px; }
+  .socials a{ color:var(--muted); font-size:1.05rem; text-decoration:none; }
+
+  footer{ text-align:center; padding:18px 16px; margin-top:18px; border-top:3px solid rgba(255,255,255,0.03); color:#cfd8dc; }
+  footer a{ color:#ffd6d6; text-decoration:none; margin:0 6px; font-weight:600; }
+
+  @media (max-width:700px){
+    iframe{ height:260px; }
+    header h1{ font-size:1.6rem; }
+  }
+</style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <h1>Roman Romero - Professional Drummer</h1>
-    <nav>
-      <ul>
-        <li>🎵 Drum Lessons</li>
-        <li>🥁 Touring & Gigs</li>
-        <li>🎶 Recording</li>
-        <li>🎥 Music Videos</li>
-        <li>🎤 Vocals & Collabs</li>
-      </ul>
-    </nav>
-    <div class="contact-header">
-      <p>📧 romandrumss@gmail.com | 📱 714-615-2404</p>
-    </div>
-  </header>
 
-  <!-- BIO -->
-  <section class="bio">
-    <h2>About Me</h2>
-    <p>I’ve been playing drums since I was 2 years old, on and off. In 2020, I recorded an album with <strong>Sublime with Rome</strong>, gigged, and played all around the United States. I’ve performed on multiple albums, worked with some of the best in the industry, and continue to bring high-energy performances live and in the studio.</p>
-  </section>
+<header>
+  <h1>Roman Romero — Professional Drummer</h1>
+  <div class="top-contact">
+    <a href="mailto:romandrumss@gmail.com">✉ romandrumss@gmail.com</a> |
+    <a href="tel:7146152404">☎ 714-615-2404</a>
+  </div>
 
-  <!-- FEATURED VIDEO -->
-  <section class="featured">
-    <h2>Featured Drum Cover</h2>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/UqTGWGOQTC8" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <!-- BAND -->
-  <section class="band">
-    <h2>My Band - Eighth Ball</h2>
-    <p>Upcoming band from Orange County, Huntington Beach! We play reggae, ska, and punk rock. We are available for touring, recording, collaborations, or gigs. Contact us for booking!</p>
+  <nav aria-label="Services">
     <ul>
-      <li>🥁 Roman E Romero - Drums</li>
-      <li>🎸 Carter McCall - Guitar</li>
-      <li>🎸 Chris Wheeler - Bass</li>
-      <li>🎤 Gabe Pederson - Vocals/Guitar</li>
+      <li>Drum Lessons</li>
+      <li>Touring Drummer</li>
+      <li>Studio Recording</li>
+      <li>Music Videos</li>
+      <li>Vocals / Collabs</li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I’ve been playing drums since I was 2 years old. In 2020 I recorded a 12-song album with <strong>Sublime with Rome</strong>, toured and gigged across the United States, and have played on numerous studio albums. I teach drums, record professionally, and tour as a live drummer. Available for bookings, studio work, and collaborations.
+    </p>
+  </section>
+
+  <section>
+    <h2>Featured Drum Cover</h2>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/UqTGWGOQTC8" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sublime with Rome Sessions</h2>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLOmFuHJwZc2EiKTz6TQ218nmzHIp_SoPm" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section>
+    <h2>My Band — Eighth Ball</h2>
+    <p>Upcoming band from Huntington Beach, Orange County — reggae, ska and punk rock. We're available to tour, record or collab.</p>
+    <ul class="members">
+      <li>Roman E Romero — Drums</li>
+      <li>Carter McCall — Guitar</li>
+      <li>Chris Wheeler — Bass</li>
+      <li>Gabe Pederson — Vocals / Guitar</li>
     </ul>
   </section>
+</main>
 
-  <!-- SUBLIME WITH ROME -->
-  <section class="sublime">
-    <h2>Sublime with Rome Sessions</h2>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/Z1vbZi1Rpcg" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/mxKa0Ma0qDI" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/31UF72t-CVQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <p><a href="https://youtube.com/playlist?list=PLOmFuHJwZc2EiKTz6TQ218nmzHIp_SoPm" target="_blank">🎧 View Full Playlist Here</a></p>
-  </section>
+<footer>
+  <div class="socials">
+    <a href="https://www.youtube.com/playlist?list=PL5qp_Xq_Sz6kaVB6_uzv-zdHpirRFk27H" target="_blank">🎥 YouTube</a>
+    <a href="https://www.tiktok.com/@romanromero10" target="_blank">🎵 TikTok</a>
+    <a href="https://www.instagram.com/romandrumss" target="_blank">📸 Instagram</a>
+  </div>
+  <p>Contact: <a href="mailto:romandrumss@gmail.com">romandrumss@gmail.com</a> | <a href="tel:7146152404">714-615-2404</a></p>
+  <p>© 2025 Roman Romero</p>
+</footer>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>📧 romandrumss@gmail.com | 📱 714-615-2404</p>
-    <div class="socials">
-      <a href="https://youtube.com/playlist?list=PL5qp_Xq_Sz6kaVB6_uzv-zdHpirRFk27H" target="_blank">YouTube</a> |
-      <a href="https://www.tiktok.com/@romanromero10" target="_blank">TikTok</a>
-    </div>
-    <p>&copy; 2025 Roman Romero</p>
-  </footer>
 </body>
 </html>
-
-  
-
